@@ -59,6 +59,10 @@ void GameManager::renderObjects(SDL_Renderer* gRenderer, float camX, float camY)
 void GameManager::updateMarines(const float& delta) {
     for (auto& m : marineManager) {
         m.second.move((m.second.getDX()*delta), (m.second.getDY()*delta), collisionHandler);
+//        //START: USING FOR TESTING PURPOSES REMOVE LATER *******************************************
+//        m.second.collidingProjectile(1);
+//        printf("Marine Health: %d\n", m.second.getHP());
+        //END: USING FOR TESTING PURPOSES REMOVE LATER *******************************************
     }
 }
 

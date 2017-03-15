@@ -24,6 +24,8 @@ public:
 
     void collidingProjectile(int damage);
 
+    int getHP(); //Returns the current health of the marine
+
     Marine();
     virtual ~Marine();
 

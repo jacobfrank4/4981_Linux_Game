@@ -43,8 +43,12 @@ void Inventory::pickUp(){
     }
 }
 
-Weapon& Inventory::getCurrent(){
+Weapon& Inventory::getCurrentWeapon(){
     return weapons[current];
+}
+
+int Inventory::getCurrent(){
+    return current;
 }
 
 void Inventory::scrollCurrent(int direction){

@@ -15,6 +15,7 @@
 #include "CollisionHandler.h"
 #include "Window.h"
 #include "SpriteManager.h"
+#include "GameHud.h"
 
 class GameStateMatch : public GameState {
 public:
@@ -41,6 +42,7 @@ private:
     Level level;
     Base base;
     Camera camera;
+    GameHud hud;
 
 
     virtual void sync();

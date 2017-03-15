@@ -10,6 +10,7 @@
 #include "LTimer.h"
 #include "LTexture.h"
 #include "Window.h"
+#include "Colors.h"
 #include <unistd.h>
 
 
@@ -123,8 +124,9 @@ void GameStateMenu::loop() {
 
     // State Loop
     while (play) {
-        handle(); // Handle user input
+//        handle(); // Handle user input
         render(); // Render game state to window
+        handle(); // Handle user input
     }
 }
 
